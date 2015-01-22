@@ -14,6 +14,8 @@
 		50D5F3F01A703CE50013CE38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D5F3EF1A703CE50013CE38 /* Images.xcassets */; };
 		50D5F3F31A703CE50013CE38 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D5F3F11A703CE50013CE38 /* LaunchScreen.xib */; };
 		50D5F3FF1A703CE50013CE38 /* ZaHunterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D5F3FE1A703CE50013CE38 /* ZaHunterTests.m */; };
+		50D5F4091A703D0A0013CE38 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D5F4081A703D0A0013CE38 /* CoreLocation.framework */; };
+		50D5F40C1A7058AA0013CE38 /* Pizzeria.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D5F40B1A7058AA0013CE38 /* Pizzeria.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		50D5F3F81A703CE50013CE38 /* ZaHunterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaHunterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D5F3FD1A703CE50013CE38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D5F3FE1A703CE50013CE38 /* ZaHunterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZaHunterTests.m; sourceTree = "<group>"; };
+		50D5F4081A703D0A0013CE38 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		50D5F40A1A7058AA0013CE38 /* Pizzeria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pizzeria.h; sourceTree = "<group>"; };
+		50D5F40B1A7058AA0013CE38 /* Pizzeria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizzeria.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D5F4091A703D0A0013CE38 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		50D5F3D61A703CE50013CE38 = {
 			isa = PBXGroup;
 			children = (
+				50D5F4081A703D0A0013CE38 /* CoreLocation.framework */,
 				50D5F3E11A703CE50013CE38 /* ZaHunter */,
 				50D5F3FB1A703CE50013CE38 /* ZaHunterTests */,
 				50D5F3E01A703CE50013CE38 /* Products */,
@@ -85,6 +92,8 @@
 				50D5F3E71A703CE50013CE38 /* AppDelegate.m */,
 				50D5F3E91A703CE50013CE38 /* ViewController.h */,
 				50D5F3EA1A703CE50013CE38 /* ViewController.m */,
+				50D5F40A1A7058AA0013CE38 /* Pizzeria.h */,
+				50D5F40B1A7058AA0013CE38 /* Pizzeria.m */,
 				50D5F3EC1A703CE50013CE38 /* Main.storyboard */,
 				50D5F3EF1A703CE50013CE38 /* Images.xcassets */,
 				50D5F3F11A703CE50013CE38 /* LaunchScreen.xib */,
@@ -222,6 +231,7 @@
 				50D5F3EB1A703CE50013CE38 /* ViewController.m in Sources */,
 				50D5F3E81A703CE50013CE38 /* AppDelegate.m in Sources */,
 				50D5F3E51A703CE50013CE38 /* main.m in Sources */,
+				50D5F40C1A7058AA0013CE38 /* Pizzeria.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +422,7 @@
 				50D5F4041A703CE50013CE38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50D5F4051A703CE50013CE38 /* Build configuration list for PBXNativeTarget "ZaHunterTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +431,7 @@
 				50D5F4071A703CE50013CE38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
