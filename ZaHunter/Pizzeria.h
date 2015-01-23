@@ -12,7 +12,7 @@
 @interface Pizzeria : NSObject
 
 -(instancetype)initWithmapItem:(MKMapItem *)mapItem;
-
+@property CLLocationCoordinate2D coordinate;
 @property NSString *name;
 @property MKMapItem *mapItem;
 

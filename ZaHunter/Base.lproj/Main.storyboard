@@ -80,7 +80,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Pizza Finder" id="0oL-Sm-x2y"/>
+                    <navigationItem key="navigationItem" title="Pizza Finder" id="0oL-Sm-x2y">
+                        <barButtonItem key="rightBarButtonItem" title="Map" id="rBm-St-ZNQ">
+                            <connections>
+                                <segue destination="pz3-kD-rwp" kind="show" id="4Fc-SG-s2d"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="pizzaTableView" destination="NtN-49-0yC" id="9sa-XD-sXW"/>
                         <outlet property="textView" destination="Zz1-Pi-boh" id="EKD-mr-fpv"/>
@@ -89,6 +95,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1000.5" y="-383"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lCR-Lr-rXj">
+            <objects>
+                <viewController id="pz3-kD-rwp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ccO-Ye-mY1"/>
+                        <viewControllerLayoutGuide type="bottom" id="rzW-bR-yZc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dMs-PN-lzA">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aS6-4d-bxo">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                </variation>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="aS6-4d-bxo"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="aS6-4d-bxo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o1b-QQ-NUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1662" y="-383"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h0X-D6-Foj">
